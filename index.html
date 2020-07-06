@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Application Icon -->
     <link rel="shortcut icon" type="image/png" href="assets/img/logo/logo.png">
@@ -33,19 +34,22 @@
                 <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo/logo.png" alt="logo"></a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href=".main-wrapper">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href=".about-wrapper">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href=".latest-wrapper">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".contact-wrapper">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </nav>
     </header>
@@ -92,7 +96,7 @@
     <!--End of Carousel-->
 
     <!--Main Section-->
-    <section class="main-section mt-5">
+    <section class="main-wrapper main-section mt-5">
         <div class="container main-content">
             <div class="row">
                 <div class="col-md-2">
@@ -353,8 +357,8 @@
     <!--End of Main Section-->
 
     <!--About Section-->
-    <section class="about header mt-5" id="about">
-        <div class="about-wrapper">
+    <section class="about-wrapper about header mt-5" id="about">
+        <div class="about-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-md-offset-2 text-center">
@@ -403,10 +407,87 @@
     <div class="container">
         <br>
         <hr>
+        <br>
     </div>
 
+    <section class="latest-wrapper latest">
+        <div class="latest-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-2 text-center">
+                        <div class="latest-title">
+                            <h3 class="head-title text-center">Latest</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    1
+                    <!-- <div class="card">
+                        <img class="card-img-top" src="assets/img/latest/athletico.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Atlético grows at the rate of Llorente</p>
+                        </div>
+                      </div> -->
+                    <div class="imageColumn cardImage">
+                        <div class="competitionTitle cardTitle">
+                            <p class="textRegularStyled athletico">
+                                <span class="title-competition">LaLiga </span>
+                                Santander
+                            </p>
+                        </div>
+
+                        <div class="imagePortion athleticoImage">
+                            <span class="lazyload-wrapper">
+                                <!-- <img class="styled__ImageStyled-n41s15-0 bDXkrl imageAnimation"
+                                    src="assets/img/latest/athletico.jpeg" alt="highlight_image"> -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    2
+                    <!-- <div class="card-latest">
+                        <img class="card-img-top" src="assets/img/latest/villarreal.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Villarreal subscribe to victory</p>
+                        </div>
+                    </div> -->
+                    <div class="imageColumn cardImage">
+                        <div class="competitionTitle cardTitle">
+                            <p class="textRegularStyled athletico">
+                                <span class="title-competition">Bundesliga</span>
+                                Santander
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    3
+                    <!-- <div class="card-latest">
+                        <img class="card-img-top" src="assets/img/latest/osasuna.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Osasuna stops the flight of the Real Sociedad</p>
+                        </div>
+                    </div> -->
+                    <div class="imageColumn cardImage">
+                        <div class="competitionTitle cardTitle">
+                            <p class="textRegularStyled athletico">
+                                <span class="title-competition">Premier League </span>
+                                Santander
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Contact Section-->
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact-wrapper contact section">
         <div class="">
             <div class="col-md-12">
                 <div class="main_contact_area m-t-3">
@@ -471,10 +552,12 @@
     <!--End of Footer-->
 
     <!--Scripts-->
+    <script src="js/main.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/textCarousel.js"></script>
     <script src="js/typed.js"></script>
 </body>
+
 </html>

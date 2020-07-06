@@ -63,7 +63,7 @@ header {
 /*====================================================
                 ABOUT SECTION
  ===================================================*/
-.about-wrapper {
+.about-section {
     background-color: rgba(0, 0, 0, 0.80);
 } 
 
@@ -89,7 +89,7 @@ header {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.about-title {
+.about-title, .latest-title {
     color:#fff;
     margin: 20px 0px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -123,6 +123,96 @@ header {
 }
 
 /*==================================================
+                    LATEST
+================================================= */
+.latest {
+    height: 600px;
+    background-color: rgba(3, 9, 20, 0.80);
+}
+
+.card-latest {
+    width: 22rem;
+}
+
+.imageColumn {
+
+}
+
+data-styled.g4[id="textRegularStyled"] {
+    content: "athletico, villareal, osasuna";
+}
+
+data-styled.g33[id="imageColumn"] {
+    content: "cardImage";
+}
+
+data-styled.g34[id="competitionTitle"] {
+    content: "cardTitle";
+}
+
+data-styled.g35[id=""] {
+
+}
+
+.imageColumn span {
+    vertical-align: inherit;
+}
+
+.athletico {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #0077C8;
+    display: -webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;display:flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    -webkit-flex-shrink:0;
+    -ms-flex-negative:0;
+    flex-shrink:0;
+    z-index:50;
+}
+
+.athletico .title-competition {
+    font-weight: bold;
+}
+
+data-styled.g37[id="imagePortion"] {
+    content: "athleticoImage";
+}
+
+.gmTIxE {
+    width:100%;
+    position:relative;
+    margin-top:-1.5rem;
+    padding-bottom:56.25%;
+}
+
+.gmTIxE img {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+.gmTIxE > a {
+    display:block;height:100%;
+}
+
+.imageAnimation {
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+}
+
+/*==================================================
                     SCORE
 ==================================================*/
 .dropdown-item .score {
@@ -130,7 +220,7 @@ header {
 }
 
 .dropdown-item .score {
-    padding:0;
+    padding: 0;
     color: #2e2828;
     font-weight: 400;
     font-size: 1.3rem;
