@@ -287,6 +287,71 @@ data-styled.g37[id="imagePortion"] {
 }
 
 /*==================================================
+                    LEAGUE TABLE
+================================================= */
+.bun {
+    color: #fff;
+    background-color: #cc0033;
+    border-color: 2px solid #cc0033;
+}
+
+.lig {
+    color: #fff;
+    background-color: #003472;
+    border-color: 2px solid #003472;
+}
+
+.prem {
+    color: #fff;
+    background-color: #3f1052;
+    border-color: 2px solid #3f1052;
+}
+
+.td-points {
+    font-weight: bold;
+}
+
+.name {
+    text-align: left;
+}
+
+.league-logo {
+    width: 2vw;
+    height: 2vw;
+}
+
+table {
+    text-align: center;
+}
+
+.top {
+    background-color: rgb(0, 255, 0, 0.5);
+}
+
+.top .league-logo {
+    animation-name: five;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes five {
+    0% {
+        position: relative;
+        right: 0vw;
+    }
+
+    50% {
+        position: relative;
+        right: 2vw;
+    }
+
+    100% {
+        position: relative;
+        right: 0vw;
+    }
+}
+/*==================================================
                     CONTACT
  =================================================*/
 .section {
