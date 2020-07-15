@@ -324,18 +324,18 @@ table {
     text-align: center;
 }
 
-.top {
+.top-5 {
     background-color: rgb(0, 255, 0, 0.5);
 }
 
-.top .league-logo {
-    animation-name: five;
+.top-5 .league-logo {
+    animation-name: top-five;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes five {
+@keyframes top-five {
     0% {
         position: relative;
         right: 0vw;
